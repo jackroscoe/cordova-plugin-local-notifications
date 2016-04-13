@@ -77,5 +77,12 @@ public class ClickActivity extends de.appplant.cordova.plugin.notification.Click
                 .setTriggerReceiver(TriggerReceiver.class)
                 .build();
     }
+    
+    @Override
+    protected void onStart() {
+        super.onStart();
+        setVisible(true);
+    }
+
 
 }
